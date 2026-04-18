@@ -12,7 +12,7 @@ RUN ./mvnw --no-transfer-progress clean package -DskipTests
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 RUN mkdir -p /app/logs /app/log /app/backup /app/runtime-data /app/Config /app/sql
-COPY --from=builder /build/target/ngocrongonline-0.0.1-SNAPSHOT.jar /app/server.jar
+COPY --from=builder /build/target/HunrProvision-0.0.1-SNAPSHOT.jar /app/server.jar
 COPY --from=builder /build/Config /app/Config
 COPY --from=builder /build/sql /app/sql
 COPY docker/entrypoint.sh /app/entrypoint.sh
