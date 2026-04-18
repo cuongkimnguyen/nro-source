@@ -17,6 +17,7 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 RUN apt-get update \
+
     && apt-get install -y --no-install-recommends default-mysql-client tzdata \
     && rm -rf /var/lib/apt/lists/*
 
@@ -26,6 +27,7 @@ COPY --from=builder /build/target/ngocrongonline-0.0.1-SNAPSHOT.jar /app/server.
 COPY --from=builder /build/Config /app/Config
 COPY --from=builder /build/sql /app/sql
 COPY --from=builder /build/backupsql.sh /app/backupsql.sh
+COPY resources /app/resources
 COPY docker/entrypoint.sh /app/entrypoint.sh
 
 RUN chmod +x /app/entrypoint.sh /app/backupsql.sh
