@@ -2,7 +2,6 @@ FROM maven:3.9.11-eclipse-temurin-17 AS builder
 WORKDIR /build
 
 COPY pom.xml mvnw ./
-COPY .mvn .mvn
 RUN chmod +x mvnw
 RUN mvn --no-transfer-progress -q -DskipTests dependency:go-offline || true
 
