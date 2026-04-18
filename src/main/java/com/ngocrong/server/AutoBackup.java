@@ -43,7 +43,10 @@ public class AutoBackup {
         // Thực hiện backup SQL
         try {
             System.out.println("Đang thực hiện backup SQL...");
-            ProcessBuilder processBuilder = new ProcessBuilder("cmd", "/c", "backupsql.bat");
+            String script = System.getProperty("os.name").toLowerCase().contains("win") ? "backupsql.bat" : "./backupsql.sh";
+            ProcessBuilder processBuilder = System.getProperty("os.name").toLowerCase().contains("win")
+                    ? new ProcessBuilder("cmd", "/c", script)
+                    : new ProcessBuilder("bash", script);
             processBuilder.directory(new File(".")); // Đặt thư mục làm việc là thư mục gốc của project
             processBuilder.redirectErrorStream(true); // Gộp error stream với output stream
 

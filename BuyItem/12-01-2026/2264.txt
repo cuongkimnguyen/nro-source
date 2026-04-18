@@ -1,2 +1,0 @@
-[03:31:20 12/01/2026] Player: gwendevstudio | Shop Type: Normal Shop | Quantity: 1
-[03:31:23 12/01/2026] Player: gwendevstudio | Shop Type: Normal Shop | Quantity: 11

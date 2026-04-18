@@ -1,0 +1,82 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: nro-db
+    restart: unless-stopped
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-change_me}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-hunr_2026}
+      TZ: ${TZ:-Asia/Bangkok}
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-p${MYSQL_ROOT_PASSWORD:-change_me}"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 30s
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nro-app
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      TZ: ${TZ:-Asia/Bangkok}
+      XMS: ${XMS:-1G}
+      XMX: ${XMX:-4G}
+      JAVA_OPTS: ${JAVA_OPTS:-}
+      SERVER_ID: ${SERVER_ID:-1}
+      SERVER_NAME: ${SERVER_NAME:-Ngoc Rong}
+      SERVER_PORT_GAME: ${SERVER_PORT_GAME:-14445}
+      SERVER_HOST: ${SERVER_HOST:-0.0.0.0}
+      GAME_PUBLIC_HOST: ${GAME_PUBLIC_HOST:-127.0.0.1}
+      SERVER_REDIRECT: ${SERVER_REDIRECT:-false}
+      SERVER_AUTOSAVE_DELAY: ${SERVER_AUTOSAVE_DELAY:-300000}
+      GAME_SERVERS: ${GAME_SERVERS:-Server 1:127.0.0.1:14445:0,Server 2:127.0.0.1:14445:0,0,0}
+      GAME_EXP: ${GAME_EXP:-5}
+      GAME_ITEM_QUANTITY_MAX: ${GAME_ITEM_QUANTITY_MAX:-1000000}
+      GAME_LOG_CCU: ${GAME_LOG_CCU:-1}
+      GAME_BOT_TOKEN: ${GAME_BOT_TOKEN:-}
+      GAME_CHAT_ID: ${GAME_CHAT_ID:-0}
+      DATABASE_HOST: ${DATABASE_HOST:-db}
+      DATABASE_PORT: ${DATABASE_PORT:-3306}
+      DATABASE_NAME: ${DATABASE_NAME:-hunr_2026}
+      DATABASE_USER: ${DATABASE_USER:-root}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-change_me}
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL:-jdbc:mysql://db:3306/hunr_2026?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&serverTimezone=Asia/Bangkok}
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME:-root}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD:-change_me}
+      SPRING_SECURITY_USER_NAME: ${SPRING_SECURITY_USER_NAME:-khoidt}
+      SPRING_SECURITY_USER_PASSWORD: ${SPRING_SECURITY_USER_PASSWORD:-kunplay@nro}
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: ${MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE:-health,metrics,threaddump,heapdump}
+    ports:
+      - "${APP_HTTP_PORT:-1707}:1707"
+      - "${SERVER_PORT_GAME:-14445}:${SERVER_PORT_GAME:-14445}"
+    volumes:
+      - ./logs:/app/logs
+      - ./backup:/app/backup
+      - ./Config:/app/Config
+      - ./runtime-data:/app/runtime-data
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c 'echo > /dev/tcp/127.0.0.1/1707'"]
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+
+volumes:
+  mysql_data:

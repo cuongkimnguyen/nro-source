@@ -1,0 +1,4 @@
+Patched for Rocky Linux 8.8:
+- pom.xml: set java.version/maven.compiler to 11, mainClass=com.ngocrong.Run, finalName=ngocrongonline-0.0.1-SNAPSHOT
+- AutoBackup.java: use backupsql.sh on Linux instead of cmd /c backupsql.bat
+- Added: build.sh, run.sh, autorun.sh, backupsql.sh, ngocrong.service, deploy-rocky8.md
