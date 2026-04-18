@@ -17,7 +17,6 @@ import java.util.zip.*;
 public class AutoBackup {
 
     public static void start() {
-        String sourceFolderPath = "./src/main/java/";
         // Đường dẫn lưu file backup
         String backupFolderPath = "./backup";
         // Tạo tên file backup với ngày tháng năm
@@ -29,15 +28,6 @@ public class AutoBackup {
         File backupDir = new File(backupFolderPath);
         if (!backupDir.exists()) {
             backupDir.mkdirs();
-        }
-
-        // Thực hiện backup code
-        try {
-            zipFolder(Paths.get(sourceFolderPath), Paths.get(backupFilePath));
-            System.out.println("Backup code thành công tại: " + backupFilePath);
-        } catch (IOException e) {
-            
-            System.err.println("Lỗi trong quá trình backup code: " + e.getMessage());
         }
 
         // Thực hiện backup SQL
