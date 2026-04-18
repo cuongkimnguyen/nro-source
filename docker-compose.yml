@@ -80,7 +80,7 @@ services:
 
   web:
     build:
-      context: ./register-react-ui
+      context: ./nro-web
       dockerfile: Dockerfile
     container_name: nro-web
     restart: unless-stopped
