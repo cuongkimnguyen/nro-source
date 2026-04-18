@@ -22,7 +22,7 @@ RUN apt-get update \
 
 RUN mkdir -p /app/logs /app/log /app/backup /app/runtime-data /app/Config /app/sql /app/backup_sql
 
-COPY --from=builder /build/target/HunrProvision-0.0.1-SNAPSHOT.jar /app/server.jar
+COPY --from=builder /build/target/ngocrongonline-0.0.1-SNAPSHOT.jar /app/server.jar
 COPY --from=builder /build/Config /app/Config
 COPY --from=builder /build/sql /app/sql
 COPY --from=builder /build/backupsql.sh /app/backupsql.sh
