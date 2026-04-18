@@ -9,7 +9,6 @@
 *.iws
 *.iml
 *.ipr
-*.xml
 .mvn
 *.log
 out
@@ -28,3 +27,4 @@ out
 *log.txt
 /data/config/*
 *.properties
+.DS_Store
