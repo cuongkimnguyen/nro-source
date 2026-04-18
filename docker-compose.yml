@@ -78,5 +78,16 @@ services:
       retries: 10
       start_period: 60s
 
+  web:
+    build:
+      context: ./register-react-ui
+      dockerfile: Dockerfile
+    container_name: nro-web
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+
 volumes:
   mysql_data:
