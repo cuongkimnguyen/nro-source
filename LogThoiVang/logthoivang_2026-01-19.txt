@@ -1,0 +1,12 @@
+    Remove
+Time: 2026-01-19 06:01:21
+Name: gwendevstudio
+Quantity: 5
+Quantity after: 10345
+Quantity before: 10340
+  at com.ngocrong.user.Player.removeItem(Player.java:12380)
+  at com.ngocrong.user.Player.buyItem(Player.java:11864)
+  at com.ngocrong.user.Player.buyItem(Player.java:10790)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+

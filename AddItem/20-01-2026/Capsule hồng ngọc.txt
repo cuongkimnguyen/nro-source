@@ -1,0 +1,60 @@
+---------------------------------
+Time: 08:20:14 20/01/2026
+Player: gwendevstudio
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12768)
+  at com.ngocrong.user.Player.buyItem(Player.java:12150)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+---------------------------------
+Time: 08:20:24 20/01/2026
+Player: gwendevstudio
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12768)
+  at com.ngocrong.user.Player.buyItem(Player.java:12150)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+---------------------------------
+Time: 08:20:26 20/01/2026
+Player: gwendevstudio
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12757)
+  at com.ngocrong.user.Player.buyItem(Player.java:12150)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+---------------------------------
+Time: 08:20:26 20/01/2026
+Player: gwendevstudio
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12757)
+  at com.ngocrong.user.Player.buyItem(Player.java:12150)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+---------------------------------
+Time: 08:20:27 20/01/2026
+Player: gwendevstudio
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12757)
+  at com.ngocrong.user.Player.buyItem(Player.java:12150)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+---------------------------------
+Time: 08:20:28 20/01/2026
+Player: gwendevstudio
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12757)
+  at com.ngocrong.user.Player.buyItem(Player.java:12150)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+

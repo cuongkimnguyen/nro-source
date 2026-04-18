@@ -1,0 +1,10 @@
+---------------------------------
+Time: 02:50:06 11/01/2026
+Player: gwendevstudio
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12652)
+  at com.ngocrong.user.Player.taskTalk(Player.java:4220)
+  at com.ngocrong.user.Player.openUIMenu(Player.java:4458)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:239)
+=====================================
+

@@ -1,0 +1,12 @@
+    Add
+Time: 2026-01-09 02:47:25
+Name: gwendevstudio
+Quantity: 11111
+Quantity after: 0
+Quantity before: 11111
+  at com.ngocrong.user.Player.addItem(Player.java:12589)
+  at com.ngocrong.user.Player.buffItem(Player.java:10318)
+  at com.ngocrong.user.Player.confirmTextBox(Player.java:10029)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:505)
+=====================================
+

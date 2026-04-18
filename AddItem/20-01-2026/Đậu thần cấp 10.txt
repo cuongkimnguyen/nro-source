@@ -1,0 +1,11 @@
+---------------------------------
+Time: 06:36:55 20/01/2026
+Player: tefewffwe
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12735)
+  at com.ngocrong.model.MagicTree.harvest(MagicTree.java:142)
+  at com.ngocrong.user.Player.confirmKeyValue(Player.java:8578)
+  at com.ngocrong.user.Player.menu(Player.java:4051)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:244)
+=====================================
+

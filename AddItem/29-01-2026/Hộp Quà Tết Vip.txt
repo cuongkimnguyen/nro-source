@@ -1,0 +1,21 @@
+---------------------------------
+Time: 14:15:34 29/01/2026
+Player: gwendevstudio
+Quantity Added: 111
+  at com.ngocrong.user.Player.addItem(Player.java:12858)
+  at com.ngocrong.user.Player.buffItem(Player.java:10529)
+  at com.ngocrong.user.Player.confirmTextBox(Player.java:10142)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:505)
+=====================================
+
+---------------------------------
+Time: 14:18:49 29/01/2026
+Player: gwendevstudio
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12847)
+  at com.ngocrong.event.OsinTetEvent.dangTuPhuc(OsinTetEvent.java:318)
+  at com.ngocrong.user.Player.confirmKeyValue(Player.java:8907)
+  at com.ngocrong.user.Player.confirmMenu(Player.java:10854)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:282)
+=====================================
+

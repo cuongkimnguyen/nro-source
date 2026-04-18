@@ -1,0 +1,10 @@
+---------------------------------
+Time: 19:47:11 06/03/2026
+Player: kietvuyppro
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12858)
+  at com.ngocrong.user.Player.buyItem(Player.java:12240)
+  at com.ngocrong.user.Player.buyItem(Player.java:10914)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+

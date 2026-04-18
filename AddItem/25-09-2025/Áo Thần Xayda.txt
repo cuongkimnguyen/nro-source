@@ -1,0 +1,33 @@
+---------------------------------
+Time: 18:51:11 25/09/2025
+Player: xayda2sao
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12606)
+  at com.ngocrong.user.Player.openSetTL(Player.java:21043)
+  at com.ngocrong.user.Player.confirmKeyValue(Player.java:9844)
+  at com.ngocrong.user.Player.confirmMenu(Player.java:10597)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:252)
+=====================================
+
+---------------------------------
+Time: 18:51:12 25/09/2025
+Player: xayda2sao
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12606)
+  at com.ngocrong.user.Player.openSetTL(Player.java:21043)
+  at com.ngocrong.user.Player.confirmKeyValue(Player.java:9844)
+  at com.ngocrong.user.Player.confirmMenu(Player.java:10597)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:252)
+=====================================
+
+---------------------------------
+Time: 18:51:13 25/09/2025
+Player: xayda2sao
+Quantity Added: 1
+  at com.ngocrong.user.Player.addItem(Player.java:12606)
+  at com.ngocrong.user.Player.openSetTL(Player.java:21043)
+  at com.ngocrong.user.Player.confirmKeyValue(Player.java:9844)
+  at com.ngocrong.user.Player.confirmMenu(Player.java:10597)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:252)
+=====================================
+

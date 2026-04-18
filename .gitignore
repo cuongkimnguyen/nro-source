@@ -1,0 +1,30 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+/build/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.xml
+.mvn
+*.log
+out
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/out/
+/log/
+### Fleet ###
+.fleet
+
+### config ###
+*log.txt
+/data/config/*
+*.properties

@@ -1,0 +1,111 @@
+    Remove
+Time: 2026-01-20 07:24:55
+Name: gwendevstudio
+Quantity: 5
+Quantity after: 10345
+Quantity before: 10340
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.subThoiVang(Player.java:12894)
+  at _event.newyear_2026.EventNewYear2026.checkTicket(EventNewYear2026.java:318)
+  at com.ngocrong.NQMP.DHVT_SH.StartDHVT_SH.Attack(StartDHVT_SH.java:122)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:107)
+=====================================
+
+    Remove
+Time: 2026-01-20 07:26:54
+Name: gwendevstudio
+Quantity: 5
+Quantity after: 10345
+Quantity before: 10340
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.subThoiVang(Player.java:12894)
+  at _event.newyear_2026.EventNewYear2026.checkTicket(EventNewYear2026.java:321)
+  at com.ngocrong.NQMP.DHVT_SH.StartDHVT_SH.Attack(StartDHVT_SH.java:122)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:107)
+=====================================
+
+    Remove
+Time: 2026-01-20 08:07:55
+Name: gwendevstudio
+Quantity: 5
+Quantity after: 10340
+Quantity before: 10335
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.subThoiVang(Player.java:12894)
+  at _event.newyear_2026.EventNewYear2026.checkTicket(EventNewYear2026.java:364)
+  at com.ngocrong.NQMP.DHVT_SH.StartDHVT_SH.Attack(StartDHVT_SH.java:122)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:107)
+=====================================
+
+    Remove
+Time: 2026-01-20 08:20:14
+Name: gwendevstudio
+Quantity: 1
+Quantity after: 10335
+Quantity before: 10334
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.buyItem(Player.java:11898)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+    Remove
+Time: 2026-01-20 08:20:24
+Name: gwendevstudio
+Quantity: 1
+Quantity after: 10334
+Quantity before: 10333
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.buyItem(Player.java:11898)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+    Remove
+Time: 2026-01-20 08:20:26
+Name: gwendevstudio
+Quantity: 1
+Quantity after: 10333
+Quantity before: 10332
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.buyItem(Player.java:11898)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+    Remove
+Time: 2026-01-20 08:20:26
+Name: gwendevstudio
+Quantity: 1
+Quantity after: 10332
+Quantity before: 10331
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.buyItem(Player.java:11898)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+    Remove
+Time: 2026-01-20 08:20:27
+Name: gwendevstudio
+Quantity: 1
+Quantity after: 10331
+Quantity before: 10330
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.buyItem(Player.java:11898)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+
+    Remove
+Time: 2026-01-20 08:20:28
+Name: gwendevstudio
+Quantity: 1
+Quantity after: 10330
+Quantity before: 10329
+  at com.ngocrong.user.Player.removeItem(Player.java:12414)
+  at com.ngocrong.user.Player.buyItem(Player.java:11898)
+  at com.ngocrong.user.Player.buyItem(Player.java:10824)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:313)
+=====================================
+

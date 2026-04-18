@@ -1,0 +1,10 @@
+---------------------------------
+Time: 13:19:54 29/01/2026
+Player: gwendevstudio
+Quantity Added: 0
+  at com.ngocrong.user.Player.addItem(Player.java:12831)
+  at com.ngocrong.user.Player.pickItem(Player.java:13150)
+  at com.ngocrong.user.Player.pickItem(Player.java:13266)
+  at com.ngocrong.network.MessageHandler.onMessage(MessageHandler.java:422)
+=====================================
+
