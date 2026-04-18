@@ -4,7 +4,7 @@ WORKDIR /build
 COPY pom.xml mvnw ./
 COPY .mvn .mvn
 RUN chmod +x mvnw
-RUN ./mvnw --no-transfer-progress -q -DskipTests dependency:go-offline || true
+RUN mvn --no-transfer-progress -q -DskipTests dependency:go-offline || true
 
 COPY src src
 COPY Config Config
@@ -12,7 +12,7 @@ COPY sql sql
 COPY docker docker
 COPY backupsql.sh backupsql.sh
 
-RUN ./mvnw --no-transfer-progress clean package -DskipTests
+RUN mvn --no-transfer-progress clean package -DskipTests
 
 FROM eclipse-temurin:17-jre
 WORKDIR /app
